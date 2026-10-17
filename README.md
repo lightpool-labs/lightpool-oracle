@@ -1,7 +1,7 @@
 # lightpool-oracle
 
 Off-chain oracle worker for LightPool spot marks. Each committee validator runs one
-instance: subscribe Hyperliquid `allMids`, sign per-market quotes, gossip votes to
+instance: subscribe Hyperliquid `trades` and use the last trade `px`, sign per-market quotes, gossip votes to
 peers, and let the **time-rotated leader** submit a single `ora_commit` with the
 quorum-signed batch (same collect/leader pattern as `lightpool-bridge`).
 
