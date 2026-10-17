@@ -1,0 +1,27 @@
+{
+  "wallet_path": "/path/to/wallet.json",
+  "lightpool_rpc_url": "http://127.0.0.1:26300",
+  "hyperliquid_ws_url": "wss://api.hyperliquid.xyz/ws",
+  "hyperliquid_info_url": "https://api.hyperliquid.xyz/info",
+  "round_ms": 100,
+  "collect_wait_ms": 50,
+  "peer_listen": "0.0.0.0:9100",
+  "peers": [
+    "http://127.0.0.1:9101",
+    "http://127.0.0.1:9102"
+  ],
+  "markets": [
+    {
+      "spot_market": "0x0301000000000001",
+      "hl_coin": "BTC",
+      "price_scale": 1000000,
+      "tick_size": 1000
+    },
+    {
+      "spot_market": "0x0301000000000002",
+      "hl_coin": "ETH",
+      "price_scale": 1000000,
+      "tick_size": 1000
+    }
+  ]
+}
